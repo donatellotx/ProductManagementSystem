@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_LayoutAbout.cshtml";
+}
+
+<h1>About Fresh Market</h1>
+<p>We provide some of the freshest natural foods in the world</p>
+
+@section LastSection
+{
+    @Html.ActionLink("Products", "Index", "Product")
+}
+

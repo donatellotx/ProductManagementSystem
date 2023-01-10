@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_LayoutAbout</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ProductManagementSystem.styles.css" asp-append-version="true" />
+</head>
+<body style="background-color:darkcyan">
+    
+    <div class="container">
+        <main role="main" class="pb-3"></main>
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-black">
+        @RenderSection("LastSection", required:false)
+    </footer>
+    
+</body>
+</html>
